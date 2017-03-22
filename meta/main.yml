@@ -1,6 +1,6 @@
 galaxy_info:
   author: joshuamkite
-  description: Role to install DJV Imaging as found at  http://djv.sourceforge.net/ but not made available as a PPA or 3rd party yum repo.
+  description: Role to install DJV Imaging as found at http://djv.sourceforge.net/ but not made available as a PPA or 3rd party yum repo.
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
