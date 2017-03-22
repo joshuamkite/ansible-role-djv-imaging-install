@@ -1,0 +1,17 @@
+---                
+#CentOS setup tasks
+
+     - name: copy djv rpm to /tmp
+       copy: 
+         src: djv-1.1-0.x86_64.rpm
+         dest: /tmp/djv-1.1-0.x86_64.rpm
+               
+     - name: ensure libpng12 is installed
+       yum:
+         name: libpng12
+         state: present
+                        
+     - name: install DJV imaging from local copied rpm
+       yum:
+         name: /tmp/djv-1.1-0.x86_64.rpm
+         state: present

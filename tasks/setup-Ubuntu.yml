@@ -1,0 +1,24 @@
+---
+     - name: copy djv deb to /tmp
+       copy: 
+         src: djv-1.1.0-Linux-64.deb
+         dest: /tmp/djv-1.1.0-Linux-64.deb
+       
+     - name: copy libpng12 deb to /tmp
+       copy: 
+         src: libpng12-0_1.2.54-1ubuntu1_amd64.deb
+         dest: /tmp/libpng12-0_1.2.54-1ubuntu1_amd64.deb      
+       
+     - name: Ensure final distro release of libpng12 deb installed by comparison with local deb
+       become: true
+       become_method: sudo
+       apt:
+         deb: /tmp/libpng12-0_1.2.54-1ubuntu1_amd64.deb
+         state: present
+           
+     - name: Install djv from local deb
+       become: true
+       become_method: sudo
+       apt:
+         deb: /tmp/djv-1.1.0-Linux-64.deb
+         state: present

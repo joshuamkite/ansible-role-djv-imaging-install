@@ -1,0 +1,12 @@
+---
+# Variable setup for joshua.djv_imaging_install
+
+# Setup/install tasks.
+- include: setup-CentOS.yml
+  when: ansible_os_family == 'CentOS'
+
+- include: setup-RedHat.yml
+  when: ansible_os_family == 'RedHat'
+
+- include: setup-Ubuntu.yml
+  when: ansible_os_family == 'Ubuntu'
