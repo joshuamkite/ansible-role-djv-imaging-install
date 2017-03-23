@@ -1,4 +1,4 @@
-joshua.djv_imaging_install
+joshuamkite.djv_imaging_install
 =========
 
 Role to install DJV Imaging as found at  http://djv.sourceforge.net/ but not made available as a PPA or 3rd party yum repo.
@@ -41,7 +41,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - joshua.djv_imaging_install
+         - joshuamkite.djv_imaging_install
 
 License
 -------

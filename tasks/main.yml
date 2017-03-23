@@ -1,5 +1,5 @@
 ---
-# Variable setup for joshua.djv_imaging_install
+# Variable setup for joshuamkite.djv_imaging_install
 
 # Setup/install tasks.
 - include: setup-CentOS.yml
